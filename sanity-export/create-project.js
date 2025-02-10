@@ -1,9 +1,16 @@
 const path = require('path');
 const fse = require('fs-extra');
 const { createClient } = require('@sanity/client');
-const Configstore = require('configstore');
 
-const config = new Configstore('sanity', {}, { globalConfigPath: true });
+const config = {
+    get: (key) => {
+        if (key === 'authToken') {
+            return process.env.SANITY_TOKEN;
+        }
+        return null;
+    }
+};
+
 const token = process.env.SANITY_TOKEN || config.get('authToken');
 const dataset = process.env.SANITY_DATASET || 'production';
 
