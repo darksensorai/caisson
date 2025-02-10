@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/67db9e4b-dcfd-4607-b03a-f279769d7eab/deploy-status)](https://app.netlify.com/sites/caisson/deploys)
+
 # Astro Netlify Sanity Starter
 
 ![Astro Netlify Sanity Starter](https://assets.stackbit.com/docs/astro-sanity-starter-thumb.jpg)
